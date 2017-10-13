@@ -1,4 +1,4 @@
-#here we use to put sample data
+#here we use to create sample data to our application
 
 10.times do |blog|
   Blog.create!(
@@ -35,5 +35,6 @@ puts "5 skills created"
 	thumb_image: "http://via.placeholder.com/350x150" 	
   )
 end
+
 puts "9 portfolio items  created"
 
