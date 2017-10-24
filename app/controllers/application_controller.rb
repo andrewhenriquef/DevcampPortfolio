@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   include DeviseWhitelist
   include SetSource
   include CurrentUserConcern
+  include DefaultPageContent
   #its just a reminder that i can do this instead of create a concern
   #before_action :configure_permitted_parameters, if: :devise_controller?
 
