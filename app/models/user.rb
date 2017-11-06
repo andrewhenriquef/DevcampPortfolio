@@ -9,7 +9,11 @@ class User < ApplicationRecord
 
   #virtual attributes
   def first_name
-  	self.name.split.first
+    begin
+  	  self.name.split.first
+    rescue
+
+    end
   end
 
   def last_name
