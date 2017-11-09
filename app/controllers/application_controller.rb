@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
+end
+
   #its just a reminder that i can do this instead of create a concern
   #before_action :configure_permitted_parameters, if: :devise_controller?
 
@@ -14,4 +16,3 @@ class ApplicationController < ActionController::Base
   	devise_parameter_sanitizer.permit(:account_update, keys: [:name])
   end
 =end
-end
