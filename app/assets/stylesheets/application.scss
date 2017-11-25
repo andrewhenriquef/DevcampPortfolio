@@ -167,3 +167,21 @@ h1 {
     width: 72rem;
   }
 }
+
+
+/*
+* Custom Styles
+*/
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+/*
+* be more specific to change de right thing that you want, in this case the link
+*/
+
+.auth-links a{
+  color: black;
+}
