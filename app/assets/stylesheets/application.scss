@@ -103,6 +103,9 @@ body {
   }
 }
 
+h1 {
+  margin-bottom: 30px;
+}
 
 /*
  * Cover
@@ -116,6 +119,10 @@ body {
   font-weight: 700;
 }
 
+.cover-heading {
+  font-size: 2.4rem;
+  margin-bottom: 70px;
+}
 
 /*
  * Footer
@@ -124,7 +131,6 @@ body {
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
-
 
 /*
  * Affix and center
@@ -158,6 +164,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 72rem;
   }
 }
