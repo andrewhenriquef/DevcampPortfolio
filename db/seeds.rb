@@ -41,7 +41,7 @@ puts "5 skills created"
       enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus 
       ut, imper",
   main_image: "http://via.placeholder.com/600x400",
-  thumb_image: "http://via.placeholder.com/350x150"   
+  thumb_image: "http://via.placeholder.com/350x200"   
   )
 end
 
@@ -55,7 +55,7 @@ end
   	  enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus 
   	  ut, imper",
 	main_image: "http://via.placeholder.com/600x400",
-	thumb_image: "http://via.placeholder.com/350x150" 	
+	thumb_image: "http://via.placeholder.com/350x200" 	
   )
 end
 
