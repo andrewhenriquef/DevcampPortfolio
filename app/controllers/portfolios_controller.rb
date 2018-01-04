@@ -3,6 +3,14 @@ class PortfoliosController < ApplicationController
   layout 'portfolio'
   access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :edit, :update]}, site_admin: :all
 
+  def sort
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+
+    #this tell to rails that we dont want to render a view
+    render nothing: true
+  end
 
   def index
  	  @portfolio_items = Portfolio.by_position
