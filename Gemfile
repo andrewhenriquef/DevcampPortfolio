@@ -64,3 +64,9 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 #pagination
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
+# gems needed to upload images to aws
+gem 'carrierwave', '~> 1.2', '>= 1.2.2'
+gem 'mini_magick', '~> 4.8'
+#connection to aws
+gem 'carrierwave-aws', '~> 1.3'
