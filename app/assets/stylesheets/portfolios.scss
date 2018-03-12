@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "jquery-ui";
+@import "gritter";
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
@@ -41,6 +42,10 @@ body {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+}
+
+.card-portfolio {
+  margin-left: 1%;
 }
 
 .card > img {
