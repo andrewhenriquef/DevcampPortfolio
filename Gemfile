@@ -71,3 +71,4 @@ gem 'mini_magick', '~> 4.8'
 #connection to aws
 gem 'carrierwave-aws', '~> 1.3'
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
+gem 'gritter', '~> 1.2'
