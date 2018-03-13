@@ -164,7 +164,7 @@ h1 {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 72rem;
+    width: 65rem;
   }
 }
 
@@ -220,4 +220,17 @@ h1 {
 
 .app-footer {
   color: white;
+}
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 30px;
 }
