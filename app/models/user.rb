@@ -16,6 +16,8 @@ class User < ApplicationRecord
 
   validates_presence_of :name
 
+  has_many :comments, dependent: :destroy
+
   #virtual attributes
   def first_name
     begin
