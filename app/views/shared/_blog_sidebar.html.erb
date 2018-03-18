@@ -3,6 +3,12 @@
     <h4>About</h4>
     <p>Analista e Desenvolvedor de Sistemas pelo Instituto Federal de São Paulo. Amante da web em todos os níveis de sua Stack e entusiasta de Ruby e Clojure.</p>
   </div>
+  <div class="sidebar-module">
+    <h4> Topics </h4>
+    <% @side_bar_topics.each do |topic|%>
+      <p><%= link_to topic.title, topic_path(topic)%> </p>
+    <%end%>
+  </div>
   <div class="sidebar-module text-center">
     <ol class="list-unstyled social-links">
       <li>
