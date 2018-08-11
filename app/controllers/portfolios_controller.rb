@@ -9,7 +9,7 @@ class PortfoliosController < ApplicationController
     end
 
     #this tell to rails that we dont want to render a view
-    render nothing: true
+    head :ok
   end
 
   def index
