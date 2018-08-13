@@ -1,9 +1,11 @@
 <div class="album text-muted">
   <div class="container">
+    <%= source_helper("alert alert-warning") %>
+
     <div class="row <%= "sortable" if logged_in?(:site_admin)  %>">
 	  <!-- when the name of collection is diferent, need to declare right this-->
 	  <%= render partial: 'portfolio_item', collection: @portfolio_items %>
-	
+
 	</div>
   </div>
 </div>
