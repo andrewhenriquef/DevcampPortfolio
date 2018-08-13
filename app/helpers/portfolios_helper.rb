@@ -7,7 +7,7 @@ module PortfoliosHelper
   	if img.model.main_image? || img.model.thumb_image?
   	  img
   	elsif type == 'thumb'
-  		image_generator(height: '250', width: '250')
+  		image_generator(height: '250', width: '350')
   	elsif type == 'main'
   		image_generator(height: '400', width: '600')
   	end
