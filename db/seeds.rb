@@ -1,4 +1,23 @@
 #here we use to create sample data to our application
+User.create!(
+  email: 'admin@gmail.com',
+  password: 'korn10',
+  password_confirmation: 'korn10',
+  name: 'Admin User',
+  roles: 'site_admin'
+)
+
+puts '1 Admin user created'
+
+User.create!(
+  email: 'regular@gmail.com',
+  password: 'korn10',
+  password_confirmation: 'korn10',
+  name: 'Regular User'
+)
+
+puts '1 Regular user created'
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -10,10 +29,10 @@ puts "3 topics created"
 10.times do |blog|
   Blog.create!(
   	title: "My Blog Post #{blog}",
-  	body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+  	body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
   	  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-  	  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis 
-  	  enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus 
+  	  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+  	  enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
   	  ut, imper",
       topic_id: Topic.last.id
 
@@ -35,13 +54,13 @@ puts "5 skills created"
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
     subtitle: "Ruby on Rails",
-  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
       Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis 
-      enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus 
+      Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+      enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
       ut, imper",
   main_image: "http://via.placeholder.com/600x400",
-  thumb_image: "http://via.placeholder.com/350x200"   
+  thumb_image: "http://via.placeholder.com/350x200"
   )
 end
 
@@ -49,13 +68,13 @@ end
   Portfolio.create!(
   	title: "Portfolio title: #{portfolio_item}",
   	subtitle: "Angular",
-	body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+	body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
   	  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-  	  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis 
-  	  enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus 
+  	  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+  	  enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
   	  ut, imper",
 	main_image: "http://via.placeholder.com/600x400",
-	thumb_image: "http://via.placeholder.com/350x200" 	
+	thumb_image: "http://via.placeholder.com/350x200"
   )
 end
 
