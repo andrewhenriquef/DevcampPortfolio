@@ -4,18 +4,19 @@ module ApplicationHelper
       (link_to 'Register', new_user_registration_path, class: style) +
       " ".html_safe +
       (link_to 'Login', new_user_session_path, class: style)
-    else 
+    else
       link_to 'Logout', destroy_user_session_path, method: :delete, class: style
    	end
   end
 
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on #{layout_name} layout"
-   	  content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me',
+        contact_path } if you like to work together."
+   	  content_tag(:div, greeting.html_safe, class: styles)
     end
   end
-  
+
   #use the gem created by me to generate a copyright
   def copyright_generator
     @copyright = DevCampViewTool33::Renderer.copyright 'Andrew Oliveira', 'All rights reserved'
